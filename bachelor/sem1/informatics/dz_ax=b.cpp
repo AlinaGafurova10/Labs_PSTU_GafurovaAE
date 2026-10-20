@@ -1,10 +1,12 @@
 #include <iostream>
+#include <locale>
 
 using namespace std;
 
 int main() 
 {
-    float a, b, x = 0;
+    setlocale(LC_ALL, "Russian");
+    float a, b, x;
 
     cin >> a >> b;
 

@@ -1,10 +1,12 @@
 #include <iostream>
 #include <cmath>
 #include <iomanip>
+#include <locale>
 
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL, "Russian");
     float a_f = 1000.0, b_f = 0.0001;
     double a_d = 1000.0, b_d = 0.0001;
     
