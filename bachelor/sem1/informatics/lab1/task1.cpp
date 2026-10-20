@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, ".65001");
     float a_f = 1000.0, b_f = 0.0001;
     double a_d = 1000.0, b_d = 0.0001;
     

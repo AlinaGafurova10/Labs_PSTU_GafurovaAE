@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, ".65001");
     int n = 1, m = 1;
 
     cout << "n = " << n << ", m = " << m << endl;
