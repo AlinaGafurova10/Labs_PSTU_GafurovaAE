@@ -27,6 +27,10 @@ int main()
         else
         cout<<"a = " << a << " отрицатеьное"<< endl;
     }
-    else
+    else{
     cout<<"Последовательность состоит из нулей" << endl;
+    }
+    
+    return 0;
+
 }
