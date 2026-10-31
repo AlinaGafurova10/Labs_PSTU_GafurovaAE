@@ -12,6 +12,7 @@ int main()
     int sm;
     int a[2][3];
     int s_a[2];
+    int size_symb = 0;
 
     for(int i = 0; i < 2; i++)
     {
@@ -20,21 +21,13 @@ int main()
         {
             cin >> a[i][j];
             sm += a[i][j];
-        }
-        s_a[i] = sm;
-    }
-
-    int size_symb = 0;
-    for(int i = 0; i < 2; i++)
-    {
-        for(int j = 0; j < 3; j++)
-        {
             int curr_leng = to_string(a[i][j]).length();
             if (curr_leng > size_symb)
             {
                 size_symb = curr_leng;
             }
         }
+        s_a[i] = sm;
     }
 
     cout << "Массив" << endl;
