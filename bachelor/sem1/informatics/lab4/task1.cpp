@@ -54,13 +54,13 @@ int main() {
     // 4. Добавление после первого четного элемента
     int first_even_idx = -1;
     bool f = false;
-    int k = 0;
-    while((k < n) && !f) {
-        if (M[k] % 2 == 0) {
-            first_even_idx = k;
+    int i = 0;
+    while((i < n) && !f) {
+        if (M[i] % 2 == 0) {
+            first_even_idx = i;
             f = true;
         }
-        k+=1;
+        i+=1;
     }
 
     if (first_even_idx != -1) {
