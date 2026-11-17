@@ -7,32 +7,35 @@ int main()
 {
     setlocale(LC_ALL, ".65001");
 
-    int a[7];
-    //2 5 6 3 7 1 9
-    int y;
+    int a[100]; //2 5 6 3 7 1 9
+    int n;
 
-    for (int i = 0; i < 7; i++)
+    cout <<"Введите размер массива: "<<endl;
+    cin >> n;
+
+    cout << "Введите" << n << "чисел" << endl;
+    for (int i = 0; i < n; i++)
     {
         cin >> a[i];
     }
 
     // Алгоритм сортировки методом выбора
     cout << "Процесс сортировки: " << endl;
-    for(int i = 0; i < 6; i++)
+    for(int i = 0; i < n; i++)
     {
-        for(int j = 6; j > i; j--)
+        for(int j = n - 1; j > i; j--)
         {
             if(a[j] < a[j-1])
             {
                 // Меняем элементы местами до тех пор пока минимальный не встанет в начало
-                y = a[j];
-                a[j] = a[j-1];
-                a[j-1] = y;
+                int y = a[j - 1];
+                a[j - 1] = a[j];
+                a[j] = y;
             }
         }
 
         //Вывод для наглядности
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < n; i++)
         {
             cout << a[i] << " ";
         }
@@ -41,7 +44,7 @@ int main()
 
     // Вывод отсортированного массива
     cout << "Отсортированный массив: " << endl;
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < n; i++)
     {
         cout << a[i] << " ";
     }
@@ -66,9 +69,9 @@ int main()
 
 
 /*
-    for (int i = 0; i < 6; i++) 
+    for (int i = 0; i < n - 1; i++) 
     {
-        for (int j = 0; j < 6 - i; j++) 
+        for (int j = 0; j < n - 1 - i; j++) 
         {
             if (a[j] > a[j + 1]) {
                 // Меняем элементы местами
@@ -80,7 +83,7 @@ int main()
         }
 
         //Вывод для наглядности
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < n; i++)
         {
             cout << a[i] << " ";
         }
