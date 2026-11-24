@@ -1,7 +1,7 @@
-#include <iostream>   // Вывод в консоль
-#include <fstream>    // Работа с файлами
-#include <string>     // Тип string
-#include <cstdio>     // Функция remove()
+#include <iostream>   
+#include <fstream>    
+#include <string>     
+#include <cstdio>     
 using namespace std;
 
 int main()
